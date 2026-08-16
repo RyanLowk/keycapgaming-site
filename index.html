@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KeyCap Games</title>
+<meta name="description" content="KeyCap Games makes SpeedyKeys, a one-thumb speedrunner for iOS and Android.">
+<style>
+  :root {
+    --ground: #FDF7FB;
+    --surface: #FFFFFF;
+    --ink: #241A21;
+    --ink-soft: #6B5A64;
+    --rule: #EBDCE5;
+    --accent: #D6249F;
+    --accent-ink: #FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #161014;
+      --surface: #1F1720;
+      --ink: #F5EBF1;
+      --ink-soft: #B29FAA;
+      --rule: #33262F;
+      --accent: #FF63C8;
+      --accent-ink: #1B1218;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 640px; margin: 0 auto; padding: 72px 24px 96px; }
+  header { border-bottom: 2px solid var(--ink); padding-bottom: 26px; }
+  .brand {
+    font-size: 13px; font-weight: 700; letter-spacing: 0.18em;
+    text-transform: uppercase; color: var(--accent); margin: 0 0 10px;
+  }
+  h1 { font-size: clamp(34px, 8vw, 52px); line-height: 1.05; margin: 0; letter-spacing: -0.02em; }
+  .tagline { color: var(--ink-soft); font-size: 19px; margin: 16px 0 0; }
+  section { margin-top: 44px; }
+  h2 { font-size: 14px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-soft); margin: 0 0 12px; }
+  p { margin: 0 0 14px; }
+  .card {
+    background: var(--surface); border: 1px solid var(--rule);
+    border-radius: 10px; padding: 20px 22px;
+  }
+  .stores { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 6px; }
+  .pill {
+    display: inline-block; padding: 8px 14px; border-radius: 999px;
+    border: 1px solid var(--rule); color: var(--ink-soft);
+    font-size: 14px; font-weight: 600;
+  }
+  a { color: var(--accent); text-underline-offset: 2px; }
+  footer {
+    margin-top: 64px; padding-top: 20px; border-top: 1px solid var(--rule);
+    color: var(--ink-soft); font-size: 14px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <p class="brand">KeyCap Games</p>
+    <h1>SpeedyKeys</h1>
+    <p class="tagline">A one-thumb speedrunner set on a road made of keycaps. Hit the gates, chain the
+      boosters, and carry enough speed through the finish to survive it.</p>
+  </header>
+
+  <section>
+    <h2>Coming soon</h2>
+    <div class="stores">
+      <span class="pill">App Store &mdash; in development</span>
+      <span class="pill">Google Play &mdash; in development</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Support</h2>
+    <div class="card">
+      <p>Questions, bugs, or trouble with a purchase &mdash; email
+        <a href="mailto:support@keycapgaming.com">support@keycapgaming.com</a> and we'll get back to you.</p>
+      <p style="margin:0">Please include your device model and what you were doing when the problem
+        happened; it makes things much faster to track down.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Legal</h2>
+    <p><a href="/privacy.html">Privacy Policy</a></p>
+  </section>
+
+  <footer>
+    &copy; 2026 KeyCap Games. All rights reserved.
+  </footer>
+
+</div>
+</body>
+</html>
